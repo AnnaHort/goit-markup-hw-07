@@ -37,6 +37,13 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                 </ul>
             </nav>
 
+            <button class="navigation-button-mobile js-open-menu" type="button">
+                <svg class="navigation-button-svg" width="32" height="22">
+                    <use class="navigation-button-use" href="./images/sprite.svg#icon-menu-burger-mobile"></use>
+                </svg>
+
+            </button>
+
             <address class="adress">
                 <ul class="items list">
                     <li class="items-list">
@@ -48,22 +55,93 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                 </ul>
             </address>
         </div>
+
+        <!--------------------- MOBILE-MODAL-WINDOW --------------------->
+
+        <div class="mobile-modal-window">
+            <div class="container mobile-modal-container js-menu-container">
+                <button class="mobile-modal-button js-close-menu">
+                    <svg class="mobile-modal-svg" width="8" height="8">
+                        <use href="./images/sprite.svg#icon-modal-window-btn"></use>
+                    </svg>
+                </button>
+
+                <ul class="modal-window-item list">
+                    <li class="modal-window-list">
+                        <a href="./index.html" class="modal-window-link link">Studio</a>
+                    </li>
+                    <li class="modal-window-list">
+                        <a href="./portfolio.html" class="modal-window-link link">Portfolio</a>
+                    </li>
+                    <li class="modal-window-list">
+                        <a href="#" class="modal-window-link link">Contacts</a>
+                    </li>
+                </ul>
+
+                <div class="modal-window-down">
+
+                    <ul class="modal-window-contacts list">
+                        <li class="modal-window-contacts-list">
+                            <a href="tel:+110001111111" class="modal-window-tel link">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="modal-window-contacts-list">
+                            <a href="mailto:info@devstudio.com" class="modal-window-mail link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="modal-window-social list">
+                        <li class="modal-window-social-list">
+                            <a href="" class="window-social-link">
+                                <svg class="window-social-svg" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-window-social-list">
+                            <a href="" class="window-social-link">
+                                <svg class="window-social-svg" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-window-social-list">
+                            <a href="" class="window-social-link">
+                                <svg class="window-social-svg" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-window-social-list">
+                            <a href="" class="window-social-link">
+                                <svg class="window-social-svg" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </header>
 
-    <main>
+    <!-- <main> -->
 
 
-        <!-- hero_section -->
-        <section class="hero">
+    <!-- hero_section -->
+
+    <!-- <section class="hero">
             <div class="hero-container container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
                 <button type="button" class="hero-button" data-modal-open>Order Service</button>
             </div>
-        </section>
-        <!-- /hero_section -->
+        </section> -->
 
-        <!-- target list section-->
-        <section class="target-section">
+    <!-- /hero_section -->
+
+    <!-- target list section-->
+
+    <!-- <section class="target-section">
             <div class="container">
                 <h2 class="hidden">Advantages</h2>
                 <ul class="advantages list">
@@ -115,12 +193,14 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     </li>
                 </ul>
             </div>
-        </section>
-        <!-- /target list section-->
+        </section> -->
+
+    <!-- /target list section-->
 
 
-        <!-- about_section -->
-        <section class="about-saction">
+    <!-- about_section -->
+
+    <!-- <section class="about-saction">
             <div class="container">
                 <h2 class="about spec-title">What are we doing</h2>
                 <ul class="about-list list">
@@ -137,12 +217,14 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     </li>
                 </ul>
             </div>
-        </section>
-        <!-- /about_section -->
+        </section> -->
+
+    <!-- /about_section -->
 
 
-        <!-- team_section -->
-        <section class="team-section">
+    <!-- team_section -->
+
+    <!-- <section class="team-section">
             <div class="container">
                 <h2 class="subject spec-title">Our Team</h2>
                 <ul class="team list ">
@@ -300,11 +382,13 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     </li>
                 </ul>
             </div>
-        </section>
-        <!-- /team_section -->
+        </section> -->
 
-        <!-- customers-section -->
-        <section class="customer-section">
+    <!-- /team_section -->
+
+    <!-- customers-section -->
+
+    <!-- <section class="customer-section">
             <div class="container">
                 <h2 class="customers-title spec-title">Customers</h2>
                 <ul class="customer-list list">
@@ -352,15 +436,17 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
+
+    <!-- /customers-section -->
+
+    <!-- </main> -->
 
 
-        <!-- /customers-section -->
-    </main>
 
     <!-- footer section -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer-container container">
             <div class="footer-text">
                 <a class="footer-logo-link link" href="./index.html">Web<span class="footer-logo">Studio</span></a>
@@ -420,13 +506,13 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </div>
 
         </div>
-    </footer>
+    </footer> -->
 
     <!-- /footer section -->
 
     <!-- modal-window -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-icon" width="8" height="8">
@@ -479,10 +565,12 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
 
             </form>
         </div>
-    </div>
+    </div> -->
 
+    <!-- modal-window -->
 
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
