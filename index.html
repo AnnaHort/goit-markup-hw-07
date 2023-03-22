@@ -199,37 +199,53 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
 
         <!-- about_section -->
 
-        <!-- <section class="about-saction">
+        <section class="about-saction">
             <div class="container">
                 <h2 class="about spec-title">What are we doing</h2>
                 <ul class="about-list list">
                     <li class="about-list-img">
-                        <img src="./images/about_section/img1.jpg" alt="growth strategy graphs" width="360"
-                            height="300">
+                        <img srcset="./images/desctop/img1-desktop-2x.jpg 2x" src="./images/about_section/img1.jpg"
+                            alt="growth strategy graphs" width="360" height="300">
                     </li>
                     <li class="about-list-img">
-                        <img src="./images/about_section/img2.jpg" alt="telegram bots" width="360" height="300">
+                        <img srcset="./images/desctop/img2-desktop-2x.jpg 2x" src="./images/about_section/img2.jpg"
+                            alt="telegram bots" width="360" height="300">
                     </li>
                     <li class="about-list-img">
-                        <img src="./images/about_section/img3.jpg" alt="development of mobile applications" width="360"
-                            height="300">
+                        <img srcset="./images/desctop/img3-desktop-2x.jpg 2x" src="./images/about_section/img3.jpg"
+                            alt="development of mobile applications" width="360" height="300">
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- /about_section -->
 
 
         <!-- team_section -->
 
-        <!-- <section class="team-section">
+        <section class="team-section">
             <div class="container">
                 <h2 class="subject spec-title">Our Team</h2>
-                <ul class="team list ">
+                <ul class="team list">
                     <li class="team-list">
-                        <img class="team-photo" src="./images/team_section/mark_guerrero.jpg" alt="team member"
-                            width="264" height="260">
+
+                        <picture>
+                            <source
+                                srcset="./images/mobile/mark-guerrer-mobile-1x.jpg 1x, ./images/mobile/mark-guerrer-mobile-2x.jpg 2x"
+                                media="(max-width: 767px)" />
+
+                            <source
+                                srcset="./images/tablet/mark-tablet-1x.jpg 1x, ./images/tablet/mark-tablet-2x.jpg 2x"
+                                media="(max-width: 1199px)" />
+
+                            <source
+                                srcset="./images/team_section/mark_guerrero.jpg 1x, ./images/desctop/mark-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+
+                            <img src="./images/team_section/mark_guerrero.jpg" alt="team member" class="team-photo">
+                        </picture>
+
                         <div class="team-border">
                             <h3 class="team-worker text-retreat">Mark Guerrero</h3>
                             <p class="team-position text-retreat">Product Designer</p>
@@ -266,8 +282,22 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                         </div>
                     </li>
                     <li class="team-list">
-                        <img class="team-photo" src="./images/team_section/tom_ford.jpg" alt="team member" width="264"
-                            height="260">
+
+                        <picture>
+                            <source
+                                srcset="./images/mobile/tom-ford-mobile-1x.jpg 1x, ./images/mobile/tom-ford-mobile-2x.jpg 2x"
+                                media="(max-width: 767px)">
+
+                            <source srcset="./images/tablet/tom-tablet-1x.jpg 1x, ./images/tablet/tom-tablet-2x.jpg 2x"
+                                media="(max-width: 1199px)" />
+
+                            <source
+                                srcset="./images/team_section/tom_ford.jpg 1x, ./images/desctop/tom-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+
+                            <img src="./images/team_section/tom_ford.jpg" alt="team member" class="team-photo">
+                        </picture>
+
                         <div class="team-border">
                             <h3 class="team-worker text-retreat">Tom Ford</h3>
                             <p class="team-position text-retreat">Frontend Developer</p>
@@ -304,8 +334,23 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                         </div>
                     </li>
                     <li class="team-list">
-                        <img class="team-photo" src="./images/team_section/camila_garcia.jpg" alt="team member"
-                            width="264" height="260">
+
+                        <picture>
+                            <source
+                                srcset="./images/mobile/camila-garcia-mobile-1x.jpg 1x, ./images/mobile/camila-garcia-mobile-2x.jpg 2x"
+                                media="(max-width: 767px)">
+
+                            <source
+                                srcset="./images/tablet/camila-tablet-1x.jpg 1x, ./images/tablet/camila-tablet-2x.jpg 2x"
+                                media="(max-width: 1199px)" />
+
+                            <source
+                                srcset="./images/team_section/camila_garcia.jpg 1x, ./images/desctop/camila-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+
+                            <img src="./images/team_section/camila_garcia.jpg" alt="team member" class="team-photo">
+                        </picture>
+
                         <div class="team-border">
                             <h3 class="team-worker text-retreat">Camila Garcia</h3>
                             <p class="team-position text-retreat">Marketing</p>
@@ -342,8 +387,23 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                         </div>
                     </li>
                     <li class="team-list">
-                        <img class="team-photo" src="./images/team_section/daniel_wilson.jpg" alt="team member"
-                            width="264" height="260">
+
+                        <picture>
+                            <source
+                                srcset="./images/mobile/daniel-wilson-mobile-1x.jpg 1x, ./images/mobile/daniel-wilson-mobile-2x.jpg 2x"
+                                media="(max-width: 767px)" />
+
+                            <source
+                                srcset="./images/tablet/daniel-tablet-1x.jpg 1x, ./images/tablet/daniel-tablet-2x.jpg 2x"
+                                media="(max-width: 1199px)" />
+
+                            <source
+                                srcset="./images/team_section/daniel_wilson.jpg , ./images/desctop/daniel-desktop-2x.jpg 2x"
+                                media="(min-width: 1200px)" />
+
+                            <img src="./images/team_section/daniel_wilson.jpg" alt="team member" class="team-photo">
+                        </picture>
+
                         <div class="team-border">
                             <h3 class="team-worker text-retreat">Daniel Wilson</h3>
                             <p class="team-position text-retreat">UI Designer</p>
@@ -381,13 +441,13 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- /team_section -->
 
         <!-- customers-section -->
 
-        <!-- <section class="customer-section">
+        <section class="customer-section">
             <div class="container">
                 <h2 class="customers-title spec-title">Customers</h2>
                 <ul class="customer-list list">
@@ -435,7 +495,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!-- /customers-section -->
 
@@ -511,7 +571,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
 
     <!-- modal-window -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-icon" width="8" height="8">
@@ -564,11 +624,11 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
 
             </form>
         </div>
-    </div> -->
+    </div>
 
     <!-- modal-window -->
 
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
