@@ -63,8 +63,6 @@ button {
     cursor: pointer;
 }
 
-
-
 .container {
     padding-left: 16px;
     padding-right: 16px;
@@ -81,19 +79,12 @@ button {
     margin-left: auto;
 }
 
-
-/* .items-list:not(:last-child) {
-    margin-right: 40px;
-} */
-
 @media screen and (min-width: 480px) {
     .container {
         width: 426px;
         margin-right: auto;
         margin-left: auto;
     }
-
-
 }
 
 @media screen and (min-width: 768px) {
@@ -130,8 +121,8 @@ button {
     text-decoration: none;
 }
 
-/* --------------------MOBILE-VERSION-------------------- */
 
+/* --------------------MOBILE-VERSION-------------------- */
 
 @media screen and (max-width: 767px) {
     .nav {
@@ -157,7 +148,6 @@ button {
 
 }
 
-
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -171,9 +161,6 @@ button {
 .logo-style {
     color: var(--secondary-text-color);
 }
-
-
-
 
 @media (min-device-pixel-ratio: 2) and (max-width: 767px),
 (min-resolution: 192dpi) and (max-width: 767px),
@@ -286,12 +273,15 @@ button {
 /* ----/target list section---- */
 
 
+
 /* --------about_section-------- */
 .about-saction {
     display: none;
 }
 
 /* --------about_section-------- */
+
+
 
 /* ---------team_section--------- */
 
@@ -390,16 +380,12 @@ button {
     padding-bottom: 120px;
 }
 
-.customers-title {}
-
 .customer-list {
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.customer-list-item {}
 
 .customer-list-link {
     display: flex;
@@ -555,8 +541,6 @@ button {
     width: 100%;
 }
 
-
-
 .footer-subscribe-mail {
     font-weight: 400;
     font-size: 12px;
@@ -572,8 +556,6 @@ button {
     background-color: transparent;
     padding-left: 16px;
 }
-
-
 
 .footer-subscribe-button {
     display: flex;
@@ -607,7 +589,6 @@ button {
 
 
 /* ---------------------TABLET-VERSION--------------------- */
-
 @media screen and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -722,8 +703,8 @@ button {
     /* ----hero_section---- */
 
 
-    /* ----target list section---- */
 
+    /* ----target list section---- */
     .advantages {
         display: flex;
         flex-direction: row;
@@ -780,15 +761,12 @@ button {
     /* -------- footer section --------- */
 }
 
-
-
-
-
-
 /* ----------------------/TABLET-VERSION---------------------- */
 
-/* ----------------------DEDKTOP-VERSION---------------------- */
 
+
+
+/* ----------------------DEDKTOP-VERSION---------------------- */
 @media screen and (min-width: 1200px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -831,9 +809,8 @@ button {
 
     /* ----hero_section---- */
 
+
     /* target-list-section */
-
-
     .target-section {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -864,7 +841,6 @@ button {
         font-size: 20px;
         line-height: 1.2;
     }
-
 
     .advantages-text {
         width: auto;
@@ -947,7 +923,6 @@ button {
         gap: 16px;
     }
 
-
     .footer-subscribe-mail {
         width: 264px;
         margin-right: 24px;
@@ -956,16 +931,9 @@ button {
     /* -----------------/footer----------------- */
 }
 
-
-
-
-
-
-
-
-
-
 /* ----------------------/DEDKTOP-VERSION---------------------- */
+
+
 
 
 
@@ -989,15 +957,12 @@ button {
         transform 300ms linear;
 }
 
-
-
 .mobile-modal-window.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translate(0);
 }
-
 
 .mobile-modal-container {
     display: flex;
@@ -1022,7 +987,6 @@ button {
     transition: background-color var(--animation-time-transition);
 }
 
-
 .mobile-modal-button:hover,
 .mobile-modal-button:focus {
     background-color: var(--btn-hover-bgc-color);
@@ -1036,8 +1000,6 @@ button {
     flex-direction: column;
     gap: 40px;
 }
-
-.modal-window-list {}
 
 .modal-window-link {
     font-weight: 700;
@@ -1103,8 +1065,6 @@ button {
     flex-wrap: wrap;
 }
 
-.modal-window-social-list {}
-
 .window-social-link {
     display: flex;
     justify-content: center;
@@ -1121,23 +1081,12 @@ button {
     outline: none;
 }
 
-
-.window-social-svg {}
-
-
 /* --------------------/ MOBILE-MODAL-WINDOW -------------------- */
 
 
 
 
-
-
-
-
-
-
 /* ----------------MODAL-WINDOW---------------- */
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -1367,6 +1316,11 @@ button {
 .modal-button:focus {
     background-color: var(--btn-hover-bgc-color);
 }
+
+/* ----------------MODAL-WINDOW---------------- */
+
+
+
 
 /* ---------------------PORTFOLIO----------------------- */
 
