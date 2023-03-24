@@ -234,7 +234,7 @@ button {
 /* ----target list section---- */
 
 .target-section {
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 
 .advantages {
@@ -1035,7 +1035,9 @@ button {
     }
 
     .items-contact {
+        font-size: 16px;
         line-height: 1.5;
+        letter-spacing: 0.02em;
     }
 
     /* ----hero_section---- */
@@ -1205,6 +1207,7 @@ button {
 }
 
 .mobile-modal-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1268,8 +1271,8 @@ button {
 }
 
 .modal-window-tel {
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 600;
+    font-size: 25px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -1299,10 +1302,7 @@ button {
 
 .modal-window-social {
     display: flex;
-    gap: 56px;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .window-social-link {
