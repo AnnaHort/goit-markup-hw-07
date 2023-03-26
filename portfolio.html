@@ -22,9 +22,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         <div class="header-container container">
             <nav class="page-nav">
                 <a class="logo link" href="./index.html">Web<span class="logo-style link">Studio</span></a>
-                <ul class="nav list">
+                <ul class="nav list menu">
                     <li class="nav-menu">
-                        <a class="navigation  link" href="./index.html">Studio</a>
+                        <a class="navigation link" href="./index.html">Studio</a>
                     </li>
                     <li class="nav-menu">
                         <a class="navigation current link" href="./portfolio.html">Portfolio</a>
@@ -35,6 +35,13 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
 
                 </ul>
             </nav>
+
+            <button class="navigation-button-mobile js-open-menu" type="button">
+                <svg class="navigation-button-svg" width="32" height="22">
+                    <use class="navigation-button-use" href="./images/sprite.svg#icon-menu-burger-mobile"></use>
+                </svg>
+
+            </button>
 
             <address class="adress">
                 <ul class="items list">
@@ -47,6 +54,73 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                 </ul>
             </address>
         </div>
+
+        <!-- MOBILE-MODAL-WINDOW -->
+
+        <div class="mobile-modal-window  js-menu-container">
+            <div class="container mobile-modal-container">
+                <button class="mobile-modal-button js-close-menu">
+                    <svg class="mobile-modal-svg" width="8" height="8">
+                        <use href="./images/sprite.svg#icon-modal-window-btn"></use>
+                    </svg>
+                </button>
+
+                <ul class="modal-window-item list">
+                    <li class="modal-window-list">
+                        <a href="./index.html" class="modal-window-link link">Studio</a>
+                    </li>
+                    <li class="modal-window-list">
+                        <a href="./portfolio.html" class="modal-window-link link">Portfolio</a>
+                    </li>
+                    <li class="modal-window-list">
+                        <a href="#" class="modal-window-link link">Contacts</a>
+                    </li>
+                </ul>
+
+                <div class="modal-window-down">
+                    <ul class="modal-window-contacts list">
+                        <li class="modal-window-contacts-list">
+                            <a href="tel:+110001111111" class="modal-window-tel link">+11 (000) 111-11-11</a>
+                        </li>
+                        <li class="modal-window-contacts-list">
+                            <a href="mailto:info@devstudio.com" class="modal-window-mail link">info@devstudio.com</a>
+                        </li>
+                    </ul>
+
+                    <ul class="modal-window-social list">
+                        <li class="modal-window-social-list">
+                            <a href="https://www.instagram.com/" class="window-social-link">
+                                <svg class="window-social-svg" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-window-social-list">
+                            <a href="https://twitter.com/" class="window-social-link">
+                                <svg class="window-social-svg" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-window-social-list">
+                            <a href="https://www.facebook.com/" class="window-social-link">
+                                <svg class="window-social-svg" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="modal-window-social-list">
+                            <a href="https://www.linkedin.com/home" class="window-social-link">
+                                <svg class="window-social-svg" width="24" height="24">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- MOBILE-MODAL-WINDOW  -->
     </header>
 
     <main>
@@ -54,31 +128,50 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         <!-- portfolio-section -->
         <section class="portfolio-section">
             <div class="container">
-                <h1 class="hidden">Filters</h1>
-                <ul class="btn list">
-                    <li class="portfolio-btn">
-                        <button type="button" class="btn-filter">All</button>
-                    </li>
-                    <li class="portfolio-btn">
-                        <button type="button" class="btn-filter">Web Site</button>
-                    </li>
-                    <li class="portfolio-btn">
-                        <button type="button" class="btn-filter">App</button>
-                    </li>
-                    <li class="portfolio-btn">
-                        <button type="button" class="btn-filter">Design</button>
-                    </li>
-                    <li class="portfolio-btn">
-                        <button type="button" class="btn-filter">Marketing</button>
-                    </li>
-                </ul>
+                <div class="portfolio-btn-container">
+                    <h1 class="hidden">Filters</h1>
+                    <ul class="btn list">
+                        <li class="portfolio-btn">
+                            <button type="button" class="btn-filter">All</button>
+                        </li>
+                        <li class="portfolio-btn">
+                            <button type="button" class="btn-filter">Web Site</button>
+                        </li>
+                        <li class="portfolio-btn">
+                            <button type="button" class="btn-filter">App</button>
+                        </li>
+                        <li class="portfolio-btn">
+                            <button type="button" class="btn-filter">Design</button>
+                        </li>
+                        <li class="portfolio-btn">
+                            <button type="button" class="btn-filter">Marketing</button>
+                        </li>
+                    </ul>
+                </div>
 
                 <ul class="portfolio list">
                     <li class="portfolio-list">
                         <a href="#" class="portfolio-link link">
                             <div class="portfolio-aside">
-                                <img class="portfolio-img" src="./images/portfolio/concept.jpg"
-                                    alt="visual appearance of banking" width="360" height="300">
+
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/portfolio-mobile-img/concept-mobile-1x.jpg 1x, ./images/portfolio/portfolio-mobile-img/concept-mobile-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-tablet-img/concept-tablet-1x.jpg 1x, ./images/portfolio/portfolio-tablet-img/concept-tablet-2x.jpg 2x"
+                                        media="(max-width: 1199px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-desctop-img/concept-desctop-1x.jpg 1x, ./images/portfolio/portfolio-desctop-img/concept-desctop-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+
+                                    <img class="portfolio-img"
+                                        src="./images/portfolio/portfolio-mobile-img/concept-mobile-1x.jpg"
+                                        alt="visual appearance of banking">
+                                </picture>
+
                                 <p class="overlay-portfolio-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -91,11 +184,30 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                             </div>
                         </a>
                     </li>
+
                     <li class="portfolio-list">
                         <a href="#" class="portfolio-link link">
                             <div class="portfolio-aside">
-                                <img class="portfolio-img" src="./images/portfolio/cashless-payment.jpg"
-                                    alt="online payment" width="360" height="300">
+
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/portfolio-mobile-img/cashless-payment-mobile-1x.jpg 1x, ./images/portfolio/portfolio-mobile-img/cashless-payment-mobile-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-tablet-img/cashess-payment-tablet-1x.jpg 1x, ./images/portfolio/portfolio-tablet-img/cashess-payment-tablet-2x.jpg 2x"
+                                        media="(max-width: 1199px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-desctop-img/cashless-paiment-desctop-1x.jpg 1x, ./images/portfolio/portfolio-desctop-img/cashless-paiment-desctop-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+
+                                    <img class="portfolio-img"
+                                        src="./images/portfolio/portfolio-mobile-img/cashless-payment-mobile-1x.jpg"
+                                        alt="online payment">
+                                </picture>
+
+
                                 <p class="overlay-portfolio-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -108,11 +220,29 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                             </div>
                         </a>
                     </li>
+
                     <li class="portfolio-list">
                         <a href="#" class="portfolio-link link">
                             <div class="portfolio-aside">
-                                <img class="portfolio-img" src="./images/portfolio/meditaion-app.jpg"
-                                    alt="programs on various gadgets" width="360" height="300">
+
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/portfolio-mobile-img/meditaion-app-mobile-1x.jpg 1x, ./images/portfolio/portfolio-mobile-img/meditaion-app-mobile-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-tablet-img/meditaion-app-tablet-1x.jpg 1x, ./images/portfolio/portfolio-tablet-img/meditaion-app-tablet-2x.jpg 2x"
+                                        media="(max-width: 1199px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-desctop-img/meditation-desctop-1x.jpg 1x, ./images/portfolio/portfolio-desctop-img/meditation-desctop-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+
+                                    <img class="portfolio-img"
+                                        src="./images/portfolio/portfolio-mobile-img/meditaion-app-mobile-1x.jpg "
+                                        alt="programs on various gadgets">
+                                </picture>
+
                                 <p class="overlay-portfolio-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -128,8 +258,26 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     <li class="portfolio-list">
                         <a href="#" class="portfolio-link link">
                             <div class="portfolio-aside">
-                                <img class="portfolio-img" src="./images/portfolio/taxi-service.jpg"
-                                    alt="using services in the car" width="360" height="300">
+
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/portfolio-mobile-img/taxi-service-mobile-1x.jpg 1x, ./images/portfolio/portfolio-mobile-img/taxi-service-mobile-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-tablet-img/taxi-service--tablet-1x.jpg 1x, ./images/portfolio/portfolio-tablet-img/taxi-service--tablet-2x.jpg 2x"
+                                        media="(max-width: 1199px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-desctop-img/taxi-service-desctop-1x.jpg 1x, ./images/portfolio/portfolio-desctop-img/taxi-service-desctop-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+
+                                    <img class="portfolio-img"
+                                        src="./images/portfolio/portfolio-mobile-img/taxi-service-mobile-1x.jpg"
+                                        alt="using services in the car">
+                                </picture>
+
+
                                 <p class="overlay-portfolio-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -145,8 +293,25 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     <li class="portfolio-list">
                         <a href="#" class="portfolio-link link">
                             <div class="portfolio-aside">
-                                <img class="portfolio-img" src="./images/portfolio/screen-illustrations.jpg"
-                                    alt="illustrations on the phone" width="360" height="300">
+
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/portfolio-mobile-img/screen-illustrations-mobile-1x.jpg 1x, ./images/portfolio/portfolio-mobile-img/screen-illustrations-mobile-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-tablet-img/screen-illustrations-tablet-1x.jpg 1x, ./images/portfolio/portfolio-tablet-img/screen-illustrations-tablet-2x.jpg 2x"
+                                        media="(max-width: 1199px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-desctop-img/screen-illustrations-desctop-1x.jpg 1x, ./images/portfolio/portfolio-desctop-img/screen-illustrations-desctop-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+
+                                    <img class="portfolio-img"
+                                        src="./images/portfolio/portfolio-mobile-img/screen-illustrations-mobile-1x.jpg"
+                                        alt="illustrations on the phone">
+                                </picture>
+
                                 <p class="overlay-portfolio-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -162,8 +327,25 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     <li class="portfolio-list">
                         <a href="#" class="portfolio-link link">
                             <div class="portfolio-aside">
-                                <img class="portfolio-img" src="./images/portfolio/online-courses.jpg"
-                                    alt="a girl with a phone" width="360" height="300">
+
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/portfolio-mobile-img/online-courses-mobile-1x.jpg 1x, ./images/portfolio/portfolio-mobile-img/online-courses-mobile-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-tablet-img/online-courses-tablet-1x.jpg 1x, ./images/portfolio/portfolio-tablet-img/online-courses-tablet-2x.jpg 2x"
+                                        media="(max-width: 1199px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-desctop-img/online-courses-desctop-1x.jpg 1x, ./images/portfolio/portfolio-desctop-img/online-courses-desctop-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+
+                                    <img class="portfolio-img"
+                                        src="./images/portfolio/portfolio-mobile-img/online-courses-mobile-1x.jpg "
+                                        alt="a girl with a phone">
+                                </picture>
+
                                 <p class="overlay-portfolio-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -179,8 +361,25 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     <li class="portfolio-list">
                         <a href="#" class="portfolio-link link">
                             <div class="portfolio-aside">
-                                <img class="portfolio-img" src="./images/portfolio/inst-stoires-concept.jpg"
-                                    alt="variations of Instagram stories" width="360" height="300">
+
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/portfolio-mobile-img/inst-stoires-concept-mobile-1x.jpg 1x, ./images/portfolio/portfolio-mobile-img/inst-stoires-concept-mobile-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-tablet-img/instagram-stories-concept-tablet-1x.jpg 1x, ./images/portfolio/portfolio-tablet-img/instagram-stories-concept-tablet-2x.jpg 2x"
+                                        media="(max-width: 1199px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-desctop-img/instagram-stories-concept-desctop-1x.jpg 1x, ./images/portfolio/portfolio-desctop-img/instagram-stories-concept-desctop-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+
+                                    <img class="portfolio-img"
+                                        src="./images/portfolio/portfolio-mobile-img/inst-stoires-concept-mobile-1x.jpg"
+                                        alt="variations of Instagram stories">
+                                </picture>
+
                                 <p class="overlay-portfolio-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -196,8 +395,25 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     <li class="portfolio-list">
                         <a href="#" class="portfolio-link link">
                             <div class="portfolio-aside">
-                                <img class="portfolio-img" src="./images/portfolio/organic-food.jpg"
-                                    alt="a woman carries a package of organic food" width="360" height="300">
+
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/portfolio-mobile-img/organic-food-mobile-1x.jpg 1x, ./images/portfolio/portfolio-mobile-img/organic-food-mobile-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-tablet-img/organic-food-tablet-1x.jpg 1x, ./images/portfolio/portfolio-tablet-img/organic-food-tablet-2x.jpg 2x"
+                                        media="(max-width: 1199px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-desctop-img/organic-food-desctop-1x.jpg 1x, ./images/portfolio/portfolio-desctop-img/organic-food-desctop-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+
+                                    <img class="portfolio-img"
+                                        src="./images/portfolio/portfolio-mobile-img/organic-food-mobile-1x.jpg"
+                                        alt="a woman carries a package of organic food">
+                                </picture>
+
                                 <p class="overlay-portfolio-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -213,8 +429,24 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     <li class="portfolio-list">
                         <a href="#" class="portfolio-link link">
                             <div class="portfolio-aside">
-                                <img class="portfolio-img" src="./images/portfolio/fresh-coffee.jpg"
-                                    alt="fresh coffee is poured" width="360" height="300">
+
+                                <picture>
+                                    <source
+                                        srcset="./images/portfolio/portfolio-mobile-img/fresh-coffee-mobile-1x.jpg 1x, ./images/portfolio/portfolio-mobile-img/fresh-coffee-mobile-2x.jpg 2x"
+                                        media="(max-width: 767px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-tablet-img/fresh-coffee-tablet-1x.jpg 1x, ./images/portfolio/portfolio-tablet-img/fresh-coffee-tablet-2x.jpg 2x"
+                                        media="(max-width: 1199px)">
+
+                                    <source
+                                        srcset="./images/portfolio/portfolio-desctop-img/fresh-coffee-desctop-1x.jpg 1x, ./images/portfolio/portfolio-desctop-img/fresh-coffee-desctop-2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+
+                                    <img class="portfolio-img" src="./images/portfolio/fresh-coffee.jpg"
+                                        alt="fresh coffee is poured">
+                                </picture>
+
                                 <p class="overlay-portfolio-text">
                                     14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie
                                     Tracker
@@ -234,13 +466,14 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
 
     </main>
 
+    <!-- footer section -->
+
     <footer class="footer">
         <div class="footer-container container">
-            <div class="footer-text">
+            <div class="logo-container">
                 <a class="footer-logo-link link" href="./index.html">Web<span class="footer-logo">Studio</span></a>
                 <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing
-                    &
-                    growth solutions.</p>
+                    & growth solutions.</p>
             </div>
 
             <div class="social-media">
@@ -276,6 +509,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     </li>
                 </ul>
             </div>
+
             <div class="footer-subscribe">
                 <h3 class="footer-subscribe-title">Subscribe</h3>
                 <form class="footer-subscribe-form">
@@ -290,8 +524,16 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                     </button>
                 </form>
             </div>
+
         </div>
     </footer>
+
+    <!-- /footer section -->
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 </body>
 
